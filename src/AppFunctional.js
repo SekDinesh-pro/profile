@@ -22,6 +22,7 @@ const AppFunctional = () => {
             // setUsers((users) => [...users, ...response.data.results]);
             setUsers([...users, ...response.data.results]);
             console.log("Data ==>", [...users, ...response.data.results]);
+            console.log("Data Reload");
             setErrorMsg('');
           } catch (error) {
             setErrorMsg('Error while loading data. Try again later.');
